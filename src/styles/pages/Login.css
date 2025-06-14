@@ -1,0 +1,114 @@
+.login-container {
+  background-color: #282a36;
+  overflow-y:auto;
+  height: 100vh;
+}
+
+.bg-dark-800 {
+  background-color: #121212;
+  border: 1px solid #333;
+}
+
+.bg-dark-700 {
+  background-color: #1e1e1e;
+  color: #fff !important;
+}
+
+.text-light {
+  color: #f8f9fa !important;
+}
+
+.form-container {
+  max-width: 1000px;
+  width: 95%;
+}
+
+.login-form, .register-form {
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.avatar-container {
+  width: 50px;
+  height: 50px;
+}
+
+.upload-indicator {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  object-fit: cover;
+}
+
+.btn-primary {
+  background-color: #4361ee;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #3a56d4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.form-control {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: #1e1e1e;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .form-container {
+    flex-direction: column;
+  }
+  
+  .login-form, .register-form {
+    width: 100%;
+  }
+  
+  .avatar-container {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+  
+  .login-form, .register-form {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  .btn-lg {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
